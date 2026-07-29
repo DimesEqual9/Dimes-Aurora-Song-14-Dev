@@ -1218,7 +1218,7 @@
 
 # Aurora's Song - Suffixed NT Sec hardsuits
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3NanoTrasenContrabandLowValue]
+  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
   id: ASClothingOuterHardsuitConstable # Just a reskin of base security hardsuit with different stats and description
   name: constable hardsuit
   suffix: Aurora's Song
@@ -1256,7 +1256,7 @@
 
 #Brigmed suit version
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3NanoTrasenContrabandLowValue]
+  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
   id: ASClothingOuterHardsuitShedu # Just a reskin of base brigmed hardsuit with different stats and description
   name: shedu hardsuit
   suffix: Aurora's Song
@@ -1286,7 +1286,7 @@
     clothingPrototype: ASClothingHeadHelmetHardsuitShedu
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3NanoTrasenContrabandLowValue]
+  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
   id: ASClothingOuterHardsuitHauberk # Just a reskin of base warden hardsuit with different stats and description
   name: hauberk hardsuit
   suffix: Aurora's Song
@@ -1318,7 +1318,7 @@
     clothingPrototype: ASClothingHeadHelmetHardsuitHauberk
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3NanoTrasenContrabandLowValue] # BaseCommandContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterHardsuitBase, BaseC2Contraband] # BaseCommandContraband<BaseC2ContrabandUnredeemable
   id: ASClothingOuterHardsuitGolem # Just a reskin of base HoS hardsuit with different stats and description
   name: golem hardsuit
   suffix: Aurora's Song
