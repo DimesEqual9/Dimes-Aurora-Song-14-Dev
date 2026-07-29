@@ -99,7 +99,7 @@
     maxAngle: 10
     angleIncrease: 2
     angleDecay: 8
-    fireRate: 5
+    fireRate: 5 # Aurora | Changed from 8 to 5
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
