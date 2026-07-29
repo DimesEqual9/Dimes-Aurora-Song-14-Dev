@@ -11,8 +11,8 @@
 
 - type: entity
   name: BSO energy sword
-  parent: [BaseC2ContrabandUnredeemable, EnergySword]
-  id: EnergySwordBSO # Aurora | Contraband status to more accurately represent space law
+  parent: [EnergySword] # Aurora's Song | Contraband status removed, as parent was updated
+  id: EnergySwordBSO
   description: A very loud & dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
   components:
   - type: EnergySword
