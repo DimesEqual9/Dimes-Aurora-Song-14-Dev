@@ -16,28 +16,20 @@
       ExchangeCoin: 2
 
 - type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
-  parent: BaseC2ContrabandUnredeemable
-  id: BaseC2ContrabandSyndicateRestricted
+  parent: BaseC2ContrabandRestricted
+  id: C2ContrabandSyndicateRestricted
   abstract: true
   components:
   - type: Contraband
     severity: Class2SyndicateRestricted
-    turnInValues:
-      FrontierUplinkCoin: 2
-      ExchangeCoin: 2 # AS
-      Doubloon: 2
 
 - type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
-  parent: BaseC2ContrabandUnredeemable
-  id: BaseC2ContrabandNanoTrasenRestricted
+  parent: BaseC2ContrabandRestricted
+  id: C2ContrabandNanoTrasenRestricted
   abstract: true
   components:
   - type: Contraband
     severity: Class2NanoTrasenRestricted
-    turnInValues:
-      FrontierUplinkCoin: 2
-      ExchangeCoin: 2 # AS
-      Doubloon: 2
 
 # For Van to fill out later
 # - type: entity

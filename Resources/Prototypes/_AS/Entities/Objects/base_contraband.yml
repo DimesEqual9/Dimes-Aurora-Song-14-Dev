@@ -42,6 +42,10 @@
     turnInValues:
     allowedDepartments: [ Security, Command ]
     severity:
+    turnInValues:
+      FrontierUplinkCoin: 2
+      ExchangeCoin: 2 # AS
+      Doubloon: 2
 
 - type: entity
   parent: BaseC2ContrabandUnredeemable
