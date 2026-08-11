@@ -89,7 +89,7 @@
 
 #Syndicate SWAT Helmet
 - type: entity
-  parent: [BaseC3SyndicateContraband, ClothingHeadHelmetSwat, ContrabandClothing] # Frontier: added ContrabandClothing, BaseC3SyndicateContraband as parent
+  parent: [C2ContrabandSyndicate, ClothingHeadHelmetSwat, ContrabandClothing] # Frontier: added ContrabandClothing, BaseC3SyndicateContraband as parent
   id: ClothingHeadHelmetSwatSyndicate
   name: SWAT helmet
   suffix: Syndicate
@@ -168,7 +168,7 @@
 
 #Cult Helmet
 - type: entity
-  parent: [ClothingHeadHelmetBase, BaseC3CultContrabandNoValue, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3CultContrabandNoValue, ContrabandClothing as parent
+  parent: [ClothingHeadHelmetBase, BaseC2Contraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3CultContrabandNoValue, ContrabandClothing as parent
   id: ClothingHeadHelmetCult
   name: cult helmet
   description: A robust, evil-looking cult helmet.
@@ -191,7 +191,7 @@
 
 #Space Ninja Helmet
 - type: entity
-  parent: [ClothingHeadEVAHelmetBase, BaseC3ContrabandNoValue, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3ContrabandNoValue, add ContrabandClothing
+  parent: [ClothingHeadEVAHelmetBase, BaseC1Contraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3ContrabandNoValue, add ContrabandClothing
   id: ClothingHeadHelmetSpaceNinja
   name: space ninja helmet
   description: What may appear to be a simple black garment is in fact a highly sophisticated nano-weave helmet. Standard issue ninja gear.
@@ -323,7 +323,7 @@
 
 #Chitinous Helmet
 - type: entity
-  parent: [ ClothingHeadHelmetBase, BaseC3ContrabandNoValue] # Frontier: BaseMajorContraband<BaseC3ContrabandNoValue
+  parent: [ ClothingHeadHelmetBase, BaseClass3Restricted] # NF<AS: BaseMajorContraband<BaseC3ContrabandNoValue<BaseClass3Restricted | Changed to C3-R as if a ling has this, they've been feeding.
   id: ClothingHeadHelmetLing
   name: chitinous helmet
   description: An all-consuming chitinous mass of armor.
@@ -420,7 +420,7 @@
       Hair: HEAD
 
 - type: entity
-  parent: [ BaseC3SyndicateContraband, ClothingHeadHelmetBase ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [ C2ContrabandSyndicateRestricted, ClothingHeadHelmetBase ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: ClothingHeadHelmetRaid
   name: syndicate raid helmet
   description: An armored helmet for use with the syndicate raid suit. Very stylish.

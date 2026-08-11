@@ -70,7 +70,7 @@
     - state: nano_label
 
 - type: entity
-  parent: [EncryptionKey, BaseC2ContrabandUnredeemable] # Frontier: BaseCentcommCommandContraband<BaseC2ContrabandUnredeemable
+  parent: [EncryptionKey, C2ContrabandRestricted] # Frontier: BaseCentcommCommandContraband<BaseC2ContrabandUnredeemable
   id: EncryptionKeyStationMaster
   name: station master encryption key
   categories: [ DoNotMap ] # Frontier
@@ -98,7 +98,7 @@
     - state: cap_label
 
 - type: entity
-  parent: [EncryptionKey, BaseC2ContrabandUnredeemable] # Frontier: BaseCommandContraband<BaseC2ContrabandUnredeemable
+  parent: [EncryptionKey, C2ContrabandRestricted] # Frontier: BaseCommandContraband<BaseC2ContrabandUnredeemable
   id: EncryptionKeyCommand
   name: command encryption key
   categories: [ DoNotMap ] # Frontier
@@ -208,7 +208,7 @@
     - state: robotics_label
 
 - type: entity
-  parent: [ EncryptionKey, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityLawyerContraband<BaseC2ContrabandUnredeemable
+  parent: [ EncryptionKey, C2ContrabandRestricted ] # Frontier: BaseSecurityLawyerContraband<BaseC2ContrabandUnredeemable
   id: EncryptionKeySecurity
   name: security encryption key
   categories: [ DoNotMap ] # Frontier
@@ -246,7 +246,7 @@
     - EncryptionService
 
 - type: entity
-  parent: [EncryptionKey, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [EncryptionKey, C2ContrabandSyndicate] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: EncryptionKeySyndie
   name: blood-red encryption key
   categories: [ DoNotMap ] # Frontier
@@ -280,7 +280,7 @@
     - state: ai_label
 
 - type: entity
-  parent: [ EncryptionKey, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContrabandNoValue
+  parent: [ EncryptionKey, BaseC1Contraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContrabandNoValue
   id: EncryptionKeyBinarySyndicate
   name: binary translator key
   description: A syndicate encryption key that translates binary signals used by silicons.

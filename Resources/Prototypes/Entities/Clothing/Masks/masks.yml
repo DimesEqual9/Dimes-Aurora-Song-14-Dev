@@ -42,7 +42,7 @@
   - type: IngestionBlocker # Goobstation
 
 - type: entity
-  parent: [ClothingMaskGas, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
+  parent: [ClothingMaskGas, C2ContrabandSyndicate, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
   id: ClothingMaskGasSyndicate
   name: syndicate gas mask
   description: A close-fitting tactical mask that can be connected to an air supply.
@@ -95,7 +95,7 @@
   - type: IngestionBlocker
 
 - type: entity
-  parent: [ ClothingMaskGasAtmos, BaseC3NanoTrasenContrabandLowValue ] # Aurora's Song - BaseCentcommContraband<BaseC3NanoTrasenContrabandLowValue
+  parent: [ ClothingMaskGasAtmos, BaseC3ContrabandCentCommLowValue ] # Aurora's Song - BaseCentcommContraband<BaseC3NanoTrasenContrabandLowValue
   id: ClothingMaskGasCentcom
   name: CentComm gas mask
   description: Oooh, gold and green. Fancy! This should help as you sit in your office.
@@ -270,7 +270,7 @@
     - Snout
 
 - type: entity
-  parent: [ClothingMaskClownBase, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingMaskClownBase, BaseC1Contraband] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: ClothingMaskClownSecurity
   name: security clown wig and mask
   description: A debatably oxymoronic but protective mask and wig.
@@ -414,7 +414,7 @@
     accent: StutteringAccent
 
 - type: entity
-  parent: [ ClothingMaskGas, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ ClothingMaskGas, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: ClothingMaskGasSwat
   name: swat gas mask
   description: A elite issue Security gas mask.

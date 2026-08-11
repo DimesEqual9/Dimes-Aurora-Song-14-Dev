@@ -76,7 +76,7 @@
       - EncryptionKeyCommon
 
 - type: entity
-  parent: [ ClothingHeadset, BaseC3NanoTrasenContraband ] # Aurora's Song | BaseCentcommContraband<BaseC3NanoTrasenContraband
+  parent: [ ClothingHeadset, BaseC3ContrabandCentCommLowValue ] # Aurora's Song | BaseCentcommContraband<BaseC3NanoTrasenContraband
   id: ClothingHeadsetCentCom
   name: CentComm headset
   description: A headset used by the upper echelons of Nanotrasen.
@@ -92,7 +92,7 @@
     sprite: Clothing/Ears/Headsets/centcom.rsi
 
 - type: entity
-  parent: [ClothingHeadset, BaseC2ContrabandUnredeemable] # Frontier: add BaseC2ContrabandUnredeemable as a parent
+  parent: [ClothingHeadset, BaseCommandContraband] # Frontier: add BaseC2ContrabandUnredeemable as a parent
   id: ClothingHeadsetCommand
   name: command headset
   description: A headset with a commanding channel.
@@ -242,7 +242,7 @@
     sprite: Clothing/Ears/Headsets/security.rsi
 
 - type: entity
-  parent: [ClothingHeadset, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingHeadset, C2ContrabandUnredeemableRestricted] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: ClothingHeadsetBrigmedic
   name: brigmedic headset
   description: A headset that helps to hear the death cries.
@@ -290,7 +290,7 @@
       sprite: Clothing/Ears/Headsets/freelance.rsi
 
 - type: entity
-  parent: [ClothingHeadset, BaseC3WizardContraband, ContrabandClothing] # Frontier: BaseMagicalContraband<BaseC3WizardContraband, add ContrabandClothing
+  parent: [ClothingHeadset, BaseC1Contraband, ContrabandClothing] # Frontier: BaseMagicalContraband<BaseC3WizardContraband, add ContrabandClothing
   id: ClothingHeadsetWizard
   name: wizard headset
   description: A headset used by the dreaded space wizards.
@@ -306,7 +306,7 @@
       sprite: Clothing/Ears/Headsets/wizard.rsi
 
 - type: entity
-  parent: [ClothingHeadset, BaseC3WizardContraband, ContrabandClothing] # Frontier: BaseMagicalContraband<BaseC3WizardContraband, add ContrabandClothing
+  parent: [ClothingHeadset, ClothingHeadsetWizard, ContrabandClothing] # Frontier: BaseMagicalContraband<BaseC3WizardContraband, add ContrabandClothing
   id: ClothingHeadsetNinja
   name: green headset
   description: Who could refuse to wear this stylish black and green headset?

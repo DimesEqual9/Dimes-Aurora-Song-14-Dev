@@ -15,15 +15,23 @@
       FrontierUplinkCoin: 2
       ExchangeCoin: 2
 
-# multiple departments restricted contraband
 - type: entity # Aurora's Song - For Equipment that is too dangerous to be "standard", without special consideration.
   parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandUnredeemableRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Security, Command ]
+    severity: Class2Restricted
+    turnInValues:
+
+- type: entity # Aurora's Song - For Equipment that is too dangerous to be "standard", without special consideration.
+  parent: C2ContrabandUnredeemableRestricted
   id: C2ContrabandRestricted
   abstract: true
   components:
   - type: Contraband
     allowedDepartments: [ Security, Command ]
-    severity:
     turnInValues:
       FrontierUplinkCoin: 2
       ExchangeCoin: 2 # AS

@@ -249,7 +249,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: [ClothingHandsBase, BaseToggleClothing, BaseC3Contraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3Contraband, added ContrabandClothing as parent
+  parent: [ClothingHandsBase, BaseToggleClothing, BaseC1Contraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3Contraband, added ContrabandClothing as parent
   id: ClothingHandsGlovesSpaceNinja
   name: space ninja gloves
   description: These black nano-enhanced gloves insulate from electricity and provide fire resistance.
@@ -428,7 +428,7 @@
   - type: Unremoveable
 
 - type: entity
-  parent: [ClothingHandsButcherable, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband added ContrabandClothing as parent
+  parent: [ClothingHandsButcherable, C2ContrabandSyndicate, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband added ContrabandClothing as parent
   id: ClothingHandsGlovesNorthStar
   name: gloves of the north star
   description: These gloves allow you to punch incredibly fast.
@@ -468,7 +468,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingHandsBase, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingHandsBase, C2ContrabandUnredeemableRestricted] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: ClothingHandsGlovesForensic
   name: forensic gloves
   description: Do not leave fibers or fingerprints. If you work without them, you're A TERRIBLE DETECTIVE.
@@ -575,7 +575,7 @@
     stealGroup: ClothingHandsKnuckleDustersQM
 
 - type: entity
-  parent: [ClothingHandsBase, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [ClothingHandsBase, C2ContrabandSyndicate] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: ClothingHandsKnuckleDustersSyndicate
   name: syndicate knuckle dusters
   description: "Plastitanium knuckle dusters branded with the blood-red S. A real man beats someone to death with these."
@@ -671,7 +671,7 @@
     # - Antagonists # Frontier
 
 - type: entity #Admeme
-  parent: ClothingHandsKnuckleDusters
+  parent: [ ClothingHandsKnuckleDusters, C2ContrabandRestricted ]
   id: ClothingHandsKnuckleBoneCrushers
   name: bone crushers
   description: "Blessed by the Gods to break all those who don't obey."
