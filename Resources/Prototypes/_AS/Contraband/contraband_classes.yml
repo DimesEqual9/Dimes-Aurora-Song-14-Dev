@@ -15,21 +15,67 @@
       FrontierUplinkCoin: 2
       ExchangeCoin: 2
 
+# multiple departments restricted contraband
+- type: entity # Aurora's Song - For Equipment that is too dangerous to be "standard", without special consideration.
+  parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Security, Command ]
+    severity:
+    turnInValues:
+      FrontierUplinkCoin: 2
+      ExchangeCoin: 2 # AS
+      Doubloon: 2
+
 - type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
-  parent: BaseC2ContrabandRestricted
+  parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandSyndicate
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2Syndicate
+    turnInValues:
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
+
+- type: entity #For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandNanoTrasen
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2NanoTrasen
+    turnInValues:
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
   id: C2ContrabandSyndicateRestricted
   abstract: true
   components:
   - type: Contraband
     severity: Class2SyndicateRestricted
+    turnInValues:
+      FrontierUplinkCoin: 2
+      ExchangeCoin: 2 # AS
+      Doubloon: 2
 
 - type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
-  parent: BaseC2ContrabandRestricted
+  parent: BaseC2ContrabandUnredeemable
   id: C2ContrabandNanoTrasenRestricted
   abstract: true
   components:
   - type: Contraband
     severity: Class2NanoTrasenRestricted
+    turnInValues:
+      FrontierUplinkCoin: 2
+      ExchangeCoin: 2 # AS
+      Doubloon: 2
 
 # For Van to fill out later
 # - type: entity
