@@ -1,16 +1,96 @@
-- type: entity
-  id: BaseColcommContraband
+# region class 2
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
   parent: BaseC2ContrabandUnredeemable
+  id: BaseC2ContrabandSyndicate
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2Syndicate
+    turnInValues:
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseC2ContrabandNanoTrasen
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2NanoTrasen
+    turnInValues:
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseC2ContrabandSyndicateRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2SyndicateRestricted
+    turnInValues:
+      FrontierUplinkCoin: 2
+      ExchangeCoin: 2 # AS
+      Doubloon: 2
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseC2ContrabandNanoTrasenRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2NanoTrasenRestricted
+    turnInValues:
+      FrontierUplinkCoin: 2
+      ExchangeCoin: 2 # AS
+      Doubloon: 2
+
+- type: entity
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseColcommContraband
   abstract: true
   components:
   - type: Contraband
     allowedDepartments: [ ColonialCommand ]
 
 # multiple departments restricted contraband
-- type: entity
-  id: BaseColcommCommandContraband
+- type: entity # Aurora's Song - For Equipment that is too dangerous to be "standard", without special consideration.
   parent: BaseC2ContrabandUnredeemable
+  id: BaseC2ContrabandRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    turnInValues:
+    allowedDepartments: [ Security, Command ]
+    severity:
+
+- type: entity
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseColcommCommandContraband
   abstract: true
   components:
   - type: Contraband
     allowedDepartments: [ ColonialCommand, Command ]
+
+#region class 3
+
+- type: entity # Aurora's Song - For Equipment so dangerous, that should it be found in anyones possesion it warrants rapid escalation.
+  parent: BaseC3ContrabandUnredeemable
+  id: BaseClass3Restricted
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ ColonialCommand ]
+    severity: Class3Restricted
+
+- type: entity # Aurora's Song - For Equipment used by CAF, permission can only be granted by ColComm.
+  parent: BaseC3ContrabandUnredeemable
+  id: BaseClass3ColonialArmedForces
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ ColonialCommand ]
+    severity: Class3ColonialArmedForces
