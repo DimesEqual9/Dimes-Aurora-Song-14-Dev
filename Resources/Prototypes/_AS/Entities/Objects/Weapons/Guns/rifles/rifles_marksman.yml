@@ -1,6 +1,6 @@
 - type: entity
   id: ASWeaponRifleMarksmanHZ-3-3-M
-  parent: [ ASBaseWeaponRifleMarksmanChamber30, ASBaseWeaponFrameRifleMarksmanAuroraGunsmith ]
+  parent: [ BaseC3ContrabandCAFUnredeemable, ASBaseWeaponRifleMarksmanChamber30, ASBaseWeaponFrameRifleMarksmanAuroraGunsmith ]
   name: HZ-3-3-M "Jackhammer"
   description: |-
     This rifle rehashes an old design, a battle-tested workhorse with many scars. Marked for the Colonial Armed Forces.
@@ -22,7 +22,7 @@
     class: weapon-details-manufacturer-hzi
 
 - type: entity
-  id: ASWeaponRifleMarksmanHZ-3-3-C
+  id: [ C2ContrabandRestricted, ASWeaponRifleMarksmanHZ-3-3-C ]
   parent: ASWeaponRifleMarksmanHZ-3-3-M
   name: HZ-3-3-C "Jackhammer"
   description: |-
@@ -108,7 +108,7 @@
 
 - type: entity
   name: Basilisk-11
-  parent: [ NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun, BaseC3SyndicateContraband ]
+  parent: [ NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun ]
   id: ASWeaponRifleBasilisk
   description: A fearsome state-of-the-art battle rifle often used by Syndicate agents who care more for violence than secrecy.
   components:

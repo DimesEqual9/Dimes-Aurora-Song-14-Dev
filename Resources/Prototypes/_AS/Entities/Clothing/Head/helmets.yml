@@ -29,7 +29,7 @@
 #region SLE
 
 - type: entity
-  parent: ClothingHeadHelmetBasic
+  parent: [ ClothingHeadHelmetBasic, C2ContrabandRestricted ]
   id: ASClothingHeadHelmetSLE
   name: SLE helmet
   description: An SLE issued helmet to protect your head.
