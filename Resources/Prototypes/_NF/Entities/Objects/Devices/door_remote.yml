@@ -1,5 +1,5 @@
 - type: entity
-  parent: [DoorRemoteDefault, BaseCommandContraband]
+  parent: [DoorRemoteDefault, C2ContrabandNanoTrasenRestricted]
   id: DoorRemoteNfsd
   name: NFSD door remote
   components:

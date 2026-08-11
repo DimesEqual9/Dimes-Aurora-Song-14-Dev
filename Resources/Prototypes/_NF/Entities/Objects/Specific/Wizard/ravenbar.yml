@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BaseCrowbar, BaseC3WizardContraband ]
+  parent: [ BaseCrowbar ]
   id: NFRavenbar
   name: ravenbar
   description: CAAAW!

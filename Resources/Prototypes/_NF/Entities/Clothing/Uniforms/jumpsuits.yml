@@ -78,7 +78,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitNfsd
+  id: [ ClothingUniformJumpsuitNfsd, C2ContrabandNanoTrasenRestricted ]
   name: NFSD jumpsuit
   description: A long sleeved jumpsuit produced for deputy sheriffs. Designed to reduce chaffing between the legs for the comfort of skin, slime, scales, fluff, and wood.
   components:
@@ -89,7 +89,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitNfsdShort
+  id: [ ClothingUniformJumpsuitNfsdShort, C2ContrabandNanoTrasenRestricted ]
   name: NFSD jumpsuit
   description: A short sleeved jumpsuit produced for deputy sheriffs. Designed to reduce chaffing between the legs for the comfort of skin, slime, scales, fluff, and wood.
   components:
@@ -99,7 +99,7 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/nfsd_jump_short.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, C2ContrabandNanoTrasenRestricted ]
   id: ClothingUniformJumpsuitNfsdTacBlack
   name: NFSD tactical jumpsuit
   description: A tactical jumpsuit for deputies in the field.
@@ -110,7 +110,7 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/nfsd_tac_black.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, C2ContrabandNanoTrasenRestricted ]
   id: ClothingUniformJumpsuitNfsdTacGray
   name: NFSD tactical jumpsuit
   description: A tactical jumpsuit for deputies in the field.
@@ -121,7 +121,7 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/nfsd_tac_gray.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, C2ContrabandNanoTrasenRestricted ]
   id: ClothingUniformJumpsuitNfsdTacCamo
   name: NFSD tactical jumpsuit
   description: A tactical jumpsuit for deputies in the field.
@@ -132,7 +132,7 @@
     sprite: _NF/Clothing/Uniforms/Jumpsuit/nfsd_tac_camo.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, C2ContrabandNanoTrasenRestricted ]
   id: ClothingUniformJumpsuitNfsdTacCream
   name: NFSD tactical jumpsuit
   description: A tactical jumpsuit for deputies in the field.
@@ -157,7 +157,6 @@
 - type: entity
   parent:
   - ClothingUniformJumpsuitRecruitSyndie
-  - ContrabandClothing
   id: ClothingUniformJumpsuitRecruitSyndieNF
   components:
   - type: SuitSensor
@@ -167,7 +166,6 @@
 - type: entity
   parent:
   - ClothingUniformJumpsuitRepairmanSyndie
-  - ContrabandClothing
   id: ClothingUniformJumpsuitRepairmanSyndieNF
   components:
   - type: SuitSensor
@@ -177,7 +175,6 @@
 - type: entity
   parent:
   - ClothingUniformJumpsuitParamedicSyndie
-  - ContrabandClothing
   id: ClothingUniformJumpsuitParamedicSyndieNF
   components:
   - type: SuitSensor
@@ -187,7 +184,6 @@
 - type: entity
   parent:
   - ClothingUniformJumpsuitChiefEngineerSyndie
-  - ContrabandClothing
   id: ClothingUniformJumpsuitChiefEngineerSyndieNF
   components:
   - type: SuitSensor
@@ -197,7 +193,6 @@
 - type: entity
   parent:
   - ClothingUniformJumpsuitSyndieFormal
-  - ContrabandClothing
   id: ClothingUniformJumpsuitSyndieFormalNF
   components:
   - type: SuitSensor

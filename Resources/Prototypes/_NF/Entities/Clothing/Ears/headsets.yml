@@ -11,7 +11,7 @@
       - EncryptionKeyCommon
 
 - type: entity
-  parent: ClothingHeadset
+  parent: [ ClothingHeadset, C2ContrabandNanoTrasenRestricted]
   id: ClothingHeadsetNfsdBrown
   name: NFSD headset
   components:

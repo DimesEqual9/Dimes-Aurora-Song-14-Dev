@@ -140,7 +140,7 @@
 # TechFab
 - type: entity
   id: NfsdTechFabCircuitboard
-  parent: SecurityTechFabCircuitboard
+  parent: [ SecurityTechFabCircuitboard, C2ContrabandNanoTrasenRestricted ]
   name: NFSD techfab machine board
   description: A machine printed circuit board for an NFSD techfab.
   components:
@@ -166,7 +166,7 @@
       Steel: 5
 
 - type: entity
-  id: ThrusterNfsdMachineCircuitboard
+  id: [ ThrusterNfsdMachineCircuitboard, C2ContrabandNanoTrasenRestricted ]
   parent: BaseMachineCircuitboard
   name: NFSD thruster machine board
   components:
@@ -233,7 +233,7 @@
     price: 20
 
 - type: entity
-  id: GyroscopeNfsdMachineCircuitboard
+  id: [ GyroscopeNfsdMachineCircuitboard, C2ContrabandNanoTrasenRestricted ]
   parent: BaseMachineCircuitboard
   name: NFSD gyroscope machine board
   components:
@@ -249,7 +249,7 @@
       Glass: 2
 
 - type: entity
-  id: SmallGyroscopeNfsdMachineCircuitboard
+  id: [ SmallGyroscopeNfsdMachineCircuitboard, C2ContrabandNanoTrasenRestricted ]
   parent: BaseMachineCircuitboard
   name: small NFSD gyroscope machine board
   components:

@@ -1,6 +1,6 @@
 - type: entity
   parent:
-  - BaseC3CultContraband
+  - BaseC1Contraband
   - ClothingBeltBase
   - ContrabandClothing
   id: ClothingBeltCultForceField
@@ -19,7 +19,7 @@
 
 - type: entity
   parent:
-  - BaseC3CultContrabandUnredeemable
+  - BaseC1Contraband
   - NFClothingBeltStorageHolsterBase
   - ContrabandClothing
   id: ClothingBeltCultWebbing

@@ -43,7 +43,7 @@
 
 - type: entity
   id: NFBaseWeaponFrameSubMachineGunCybersun
-  parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponFrameSubMachineGun ] # Contraband adjusted | Aurora
+  parent: [ C2ContrabandSyndicate, NFBaseWeaponFrameSubMachineGun ] # Contraband adjusted | Aurora
   abstract: true
   components:
   - type: Gun
@@ -63,7 +63,7 @@
 
 - type: entity
   id: NFBaseWeaponFrameSubMachineGunGorlex
-  parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponFrameSubMachineGun ] # Contraband adjusted | Aurora
+  parent: [ C2ContrabandSyndicate, NFBaseWeaponFrameSubMachineGun ] # Contraband adjusted | Aurora
   abstract: true
   components:
 # SMG frames no longer inherently wieldable | AS

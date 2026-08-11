@@ -915,7 +915,7 @@
     price: 2000
 
 - type: entity
-  parent: UniformPrinterFlatpack
+  parent: [ UniformPrinterFlatpack, C2ContrabandNanoTrasenRestricted]
   id: NfsdTechFabFlatpack
   name: NFSDtechfab flatpack
   description: A flatpack used for constructing an NFSD techfab.
@@ -966,7 +966,7 @@
     price: 75
 
 - type: entity
-  parent: HoverbikeFlatpack
+  parent: [ HoverbikeFlatpack, C2ContrabandNanoTrasenRestricted ]
   id: HoverbikeNfsdFlatpack
   name: NFSD hoverbike flatpack
   description: A flatpack used for constructing a hoverbike. Keys already slotted in the ignition.

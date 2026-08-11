@@ -660,7 +660,7 @@
 #region Antagonists / Contraband
 - type: entity
   parent:
-  - BaseC3SyndicateContrabandUnredeemable
+  - BaseC1Contraband
   - ClothingBackpackMessengerContractor
   - ContrabandClothing
   id: ClothingBackpackMessengerSyndicate
