@@ -30,8 +30,8 @@
     id: CampaignHat
 
 - type: entity
-  parent: ClothingHeadHatNfsdCampaignFilled
-  id: [ C2ContrabandRestricted, ASClothingHeadHatSLECampaignFilled ]
+  parent: [ C2ContrabandRestricted, ClothingHeadHatNfsdCampaignFilled ]
+  id: ASClothingHeadHatSLECampaignFilled
   name: SLE campaign hat
   suffix: Filled
   description: A blue beret with a golden rank emblem.
