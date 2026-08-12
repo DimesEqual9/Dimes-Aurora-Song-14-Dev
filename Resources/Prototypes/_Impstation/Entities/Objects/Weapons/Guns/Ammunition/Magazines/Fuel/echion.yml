@@ -51,7 +51,7 @@
     - EchionGun
 
 - type: entity
-  parent: [ SolutionTank, SolutionVeryTiny, BaseItem, C2ContrabandSyndicateRestricted ] # Aurora's Song - Solution refactor
+  parent: [ SolutionTank, SolutionVeryTiny, BaseItem, BaseC2ContrabandUnredeemable ] # Aurora's Song - Solution refactor
   id: PunkEchionCanister
   name: Echion canister
   description: A home-made canister designed for quickly refueling Echion weapons, but it feels kinda fragile.
