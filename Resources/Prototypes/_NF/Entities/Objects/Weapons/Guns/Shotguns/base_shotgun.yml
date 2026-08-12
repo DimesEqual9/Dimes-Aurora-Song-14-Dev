@@ -42,7 +42,7 @@
 #region manufacturer
 # Giving both NT and Gorlex shotguns their own unique frames to allow for future customization | Aurora
 - type: entity
-  id: [ NFBaseWeaponFrameShotgunNanotrasen, C2ContrabandNanoTrasen ]
+  id: NFBaseWeaponFrameShotgunNanotrasen
   parent: NFBaseWeaponFrameShotgunWieldable
   abstract: true
   components:

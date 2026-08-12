@@ -238,7 +238,7 @@
 #region AntiMateriel
 - type: entity
   id: NFBaseBulletAntiMateriel
-  parent: NFBaseBullet
+  parent: [ NFBaseBullet, C2ContrabandUnredeemableRestricted ]
   abstract: true
   components:
   - type: Projectile
@@ -255,7 +255,7 @@
 
 - type: entity
   id: NFBaseBulletAntiMaterielRubber
-  parent: NFBaseBulletRubber
+  parent: [ NFBaseBulletRubber, C2ContrabandUnredeemableRestricted ]
   abstract: true
   components:
   - type: Projectile
