@@ -27,7 +27,7 @@
   - type: VisionCorrection
 
 - type: entity
-  parent: ClothingEyesGlassesSecurity
+  parent: [ C2ContrabandNanoTrasenRestricted, ClothingEyesGlassesSecurity ]
   id: ClothingEyesGlassesNfsd
   name: NFSD glasses
   description: Upgraded sunglasses that provide flash immunity and a security HUD.
