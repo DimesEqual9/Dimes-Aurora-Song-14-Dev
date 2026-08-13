@@ -39,6 +39,46 @@
 
 - type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
   parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandSyndicateUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2Syndicate
+
+- type: entity #For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandNanoTrasenUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2NanoTrasen
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandSyndicateNoValue
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2Syndicate
+    turnInValues:
+      FrontierUplinkCoin: 0
+      ExchangeCoin: 0
+      Doubloon: 0
+
+- type: entity #For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
+  id: C2ContrabandNanoTrasenNoValue
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2NanoTrasen
+    turnInValues:
+      FrontierUplinkCoin: 0
+      ExchangeCoin: 0
+      Doubloon: 0
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
+  parent: BaseC2ContrabandUnredeemable
   id: C2ContrabandSyndicate
   abstract: true
   components:
@@ -61,25 +101,61 @@
       ExchangeCoin: 1 # AS
       Doubloon: 1
 
-- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate; Future proofing.
-  parent: BaseC2ContrabandUnredeemable
-  id: C2ContrabandSyndicateRestricted
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate, and requires a permit; Future proofing.
+  parent: C2ContrabandSyndicateUnredeemable
+  id: C2ContrabandSyndicateRestrictedUnredeemable
   abstract: true
   components:
   - type: Contraband
     severity: Class2SyndicateRestricted
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen, and requires a permit; Future proofing.
+  parent: C2ContrabandNanoTrasenUnredeemable
+  id: C2ContrabandNanoTrasenRestrictedUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2NanoTrasenRestricted
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate, and requires a permit; Future proofing.
+  parent: C2ContrabandSyndicateRestrictedUnredeemable
+  id: C2ContrabandSyndicateNoValueRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    turnInValues:
+      FrontierUplinkCoin: 0
+      ExchangeCoin: 0
+      Doubloon: 0
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen, and requires a permit; Future proofing.
+  parent: C2ContrabandNanoTrasenRestrictedUnredeemable
+  id: C2ContrabandNanoTrasenNoValueRestricted
+  abstract: true
+  components:
+  - type: Contraband
+    turnInValues:
+      FrontierUplinkCoin: 0
+      ExchangeCoin: 0
+      Doubloon: 0
+
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to the Syndicate, and requires a permit; Future proofing.
+  parent: C2ContrabandSyndicateRestrictedUnredeemable
+  id: C2ContrabandSyndicateRestricted
+  abstract: true
+  components:
+  - type: Contraband
     turnInValues:
       FrontierUplinkCoin: 2
       ExchangeCoin: 2 # AS
       Doubloon: 2
 
-- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen; Future proofing.
-  parent: BaseC2ContrabandUnredeemable
+- type: entity # Aurora's Song - For Equipment that is only permissible to those alligned to NanoTrasen, and requires a permit; Future proofing.
+  parent: C2ContrabandNanoTrasenRestrictedUnredeemable
   id: C2ContrabandNanoTrasenRestricted
   abstract: true
   components:
   - type: Contraband
-    severity: Class2NanoTrasenRestricted
     turnInValues:
       FrontierUplinkCoin: 2
       ExchangeCoin: 2 # AS
