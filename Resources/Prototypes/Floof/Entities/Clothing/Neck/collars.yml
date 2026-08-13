@@ -106,7 +106,7 @@
     sprite: Floof/Clothing/Neck/collar_cmd.rsi
 
 - type: entity
-  parent: ClothingNeckCollarBase
+  parent: [ BaseC3ContrabandCentCommLowValue, ClothingNeckCollarBase ]
   id: ClothingNeckCollarCC
   name: CentCom collar
   description: All bark with a whole lotta bite.
@@ -117,7 +117,7 @@
     sprite: Floof/Clothing/Neck/collar_cc.rsi
 
 - type: entity
-  parent: ClothingNeckCollarBase
+  parent: [ C2ContrabandSyndicate, ClothingNeckCollarBase ]
   id: ClothingNeckCollarSyndi
   name: Blood-Red collar
   description: Sometimes you gotta be naughty.
