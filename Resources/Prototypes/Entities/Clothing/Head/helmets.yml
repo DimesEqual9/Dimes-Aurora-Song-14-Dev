@@ -246,7 +246,7 @@
 
 #Wizard Helmet
 - type: entity
-  parent: [ClothingHeadHelmetBase, ContrabandClothing] # Frontier: added ContrabandClothing as parent
+  parent: ClothingHeadHelmetBase # Frontier: added ContrabandClothing as parent
   id: ClothingHeadHelmetWizardHelm
   name: wizard helm
   description: Strange-looking helmet that most certainly belongs to a real magic user.
