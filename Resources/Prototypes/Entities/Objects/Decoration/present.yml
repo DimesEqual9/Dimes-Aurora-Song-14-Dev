@@ -344,10 +344,10 @@
         orGroup: GiftPool
       - id: CrayonBox
         orGroup: GiftPool
-      - id: ClothingHeadHatCatEars
-        orGroup: GiftPool
-      - id: ClothingHeadHatDogEars
-        orGroup: GiftPool
+      #- id: ClothingHeadHatCatEars
+      #  orGroup: GiftPool
+      #- id: ClothingHeadHatDogEars
+      #  orGroup: GiftPool
       - id: ToySword
         orGroup: GiftPool
       - id: NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun

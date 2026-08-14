@@ -86,8 +86,8 @@
           prob: 0.02 # Frontier
         - id: ResearchDisk10000 # Frontier
           prob: 0.005 # Frontier
-        - id: ClothingHeadHatCatEars
-          prob: 0.00001 # Frontier: 0.01>0.00001
+        #- id: ClothingHeadHatCatEars
+        #  prob: 0.00001 # Frontier: 0.01>0.00001
         # Start Frontier - Drip
         - !type:GroupSelector
           children:

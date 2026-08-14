@@ -715,8 +715,8 @@
   id: HappyHonkToyUnsafeEntityTable
   table: !type:GroupSelector
     children: # Total Weight 6
-    - id: ClothingHeadHatCatEars
-      weight: 0.25
+#    - id: ClothingHeadHatCatEars
+#      weight: 0.25
     - id: C4
       weight: 0.05
     - id: ToyMarauder
@@ -726,5 +726,5 @@
     - id: NFWeaponRevolverPython45 # Aurora's Song - WeaponRevolverPythonAP>NFWeaponRevolverPython45
       weight: 0.4
     - id: BalloonSyn
-      weight: 0.3
+      weight: 0.5 # Aurora's Song - 0.55>0.3 due to cat ear removal
     - id: PlushieNuke

@@ -1541,8 +1541,8 @@
         orGroup: Clothes
       - id: ClothingHeadHatDogEars
         orGroup: Clothes
-      - id: ClothingHeadHatCatEars
-        orGroup: Clothes
+      #- id: ClothingHeadHatCatEars
+      #  orGroup: Clothes
       - id: ClothingEyesGlassesOutlawGlasses
         orGroup: Clothes
       - id: ClothingOuterSuitCarp

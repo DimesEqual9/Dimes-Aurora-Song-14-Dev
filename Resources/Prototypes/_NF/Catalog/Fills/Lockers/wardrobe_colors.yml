@@ -134,9 +134,9 @@
       weight: 0.01
     - id: ClothingNeckCloakAdmin
       weight: 0.00001
-    - id: ClothingHeadHatDogEars
-      weight: 0.00001
-    - id: ClothingHeadHatCatEars
-      weight: 0.00001
+    #- id: ClothingHeadHatDogEars
+    #  weight: 0.00001
+    #- id: ClothingHeadHatCatEars
+    #  weight: 0.00001
     - id: ClothingShoesBootsMagBlinding
       weight: 0.00001

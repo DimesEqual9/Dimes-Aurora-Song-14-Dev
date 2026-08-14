@@ -569,6 +569,8 @@ public sealed partial class AdminVerbSystem
             args.Verbs.Add(ghostKick);
         }
 
+        // Aurora's Song: Removal of catears
+        /*
         if (TryComp<InventoryComponent>(args.Target, out var inventory))
         {
             var nyanifyName = Loc.GetString("admin-smite-nyanify-name").ToLowerInvariant();
@@ -588,7 +590,7 @@ public sealed partial class AdminVerbSystem
                 Message = string.Join(": ", nyanifyName, Loc.GetString("admin-smite-nyanify-description"))
             };
             args.Verbs.Add(nyanify);
-
+        */
             var killSignName = Loc.GetString("admin-smite-kill-sign-name").ToLowerInvariant();
             Verb killSign = new()
             {
@@ -640,7 +642,7 @@ public sealed partial class AdminVerbSystem
             };
             args.Verbs.Add(cluwne);
 
-            // Frontier: remove maid smite due to weird ID perms
+            // Aurora's Song: Errors if you remove cat ear smite. Smite has been commented out consequently.
             /*
             var maidenName = Loc.GetString("admin-smite-maid-name").ToLowerInvariant();
             Verb maiden = new()
@@ -661,8 +663,8 @@ public sealed partial class AdminVerbSystem
                 Message = string.Join(": ", maidenName, Loc.GetString("admin-smite-maid-description"))
             };
             args.Verbs.Add(maiden);
-            */
         }
+        */
 
         var angerPointingArrowsName = Loc.GetString("admin-smite-anger-pointing-arrows-name").ToLowerInvariant();
         Verb angerPointingArrows = new()

@@ -122,17 +122,18 @@
     OrganHumanBrain: 1
   recipeType: Oven # Frontier
 
-- type: microwaveMealRecipe
-  id: RecipeCatBurger
-  name: cat burger recipe
-  result: FoodBurgerCat
-  time: 10
-  group: Savory
-  solids:
-    FoodBreadBun: 1
-    FoodMeat: 1
-    ClothingHeadHatCatEars: 1
-  recipeType: Oven # Frontier
+# Aurora's Song: Removed cat-ears
+#- type: microwaveMealRecipe
+#  id: RecipeCatBurger
+#  name: cat burger recipe
+#  result: FoodBurgerCat
+#  time: 10
+#  group: Savory
+#  solids:
+#    FoodBreadBun: 1
+#    FoodMeat: 1
+#    ClothingHeadHatCatEars: 1
+#  recipeType: Oven # Frontier
 
 - type: microwaveMealRecipe #Added to metamorph recipes
   id: RecipeCheeseburger
